@@ -33,7 +33,7 @@ export default function App() {
       setCurrentBackground(isColdBackground ? coldBackground : hotBackground);
       // Si c'est le cold background il affiche le froid, sinon il affiche le chaud
     }
-  }, [inputValue]);
+  }, [inputValue, currentUnit]);
 
   function getConvertedTemperature() {
     const valueAsFloat = Number.parseFloat(inputValue);
